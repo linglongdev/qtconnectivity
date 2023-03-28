@@ -1,0 +1,25 @@
+package:
+  id: qtconnectivity
+  name: qtconnectivity
+  kind: lib
+  version: 5.11.3
+  description: |
+    qtconnectivity
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qtconnectivity-opensource-src.git
+  version: uos/5.11.3
+  commit: bb2f77bb153aaa90c95f094660c8dee78761d6c3
+
+  patch: []
+build:
+  kind: qmake
